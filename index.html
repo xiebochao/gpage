@@ -1,16 +1,2821 @@
+
+
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Github Page demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="index.js"></script>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mixly Wiki</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
 </head>
-<body>
-    <div id="main-content">
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="contents.html#document-contents" class="icon icon-home"> Mixly Wiki
+          
+
+          
+            
+            <img src="_static/favicon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-basic/index">软件使用基础</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/01Mixly_introduction">Mixly 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/02Installation-update">软件安装与更新</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/03Interface_introduction">界面介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/24.Example">范例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/26.Company">自定义公司库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/27.Third-Party">第三方库开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-basic/25.FAQ">FAQ</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-Arduino/index">Arduino AVR编程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/01Input-Output">输入/输出</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">数字输出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id7">数字输入</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id13">模拟输入</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id19">模拟输出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id24">中断指令</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id29">取消中断</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id32">脉冲长度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#shiftout">ShiftOut</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id39">管脚中断</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id44">取消管脚中断</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id47">多功能按键</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/02Control">控制</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#while">while 循环</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id9">延时</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#if">如果(if)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#switch">如果(switch)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#for">for循环</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id30">跳出循环</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id36">系统运行时间</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#mstimer2">MsTimer2 定时器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id45">MsTimer2 定时器启动</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id48">MsTimer2 定时器停止</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id51">允许中断</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id55">禁止中断</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#scoop-task">SCoop Task</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/03Mathematics">数学</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">数字常量</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id4">数学运算</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id8">位运算</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id17">三角函数及其他</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id18">数学运算2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#min-max">取最大(小)值(min/max)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#randomseed">初始化随机数(randomseed)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#random">随机数(random)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#constrain">约束(constrain)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#map">映射(map)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/04Logic">逻辑</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/05Text">文本</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">字符串</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id3">字符</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id4">字符串连接</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#toint-tofloat">字符串转数字(toInt()/toFloat())</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#ascii-char">转ASCII字符(char())</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#ascii-toascii">转ASCII数值(toascii)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id6">进制 转字符串</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#string-length">获取字符串长度(String().length())</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#n">获取字符串第N个字符</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id7">字符串比较1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id8">字符串比较2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/06Lists">数组</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">创建数组1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id3">创建数组2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id4">获取长度</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#n">获取数组第N项</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id5">数组第N项赋值</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/07Variables">变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/08Functions">函数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/09Serial">串口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/10Sensor">传感器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/11Actuator">执行器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/12Display">显示器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/13Communicate">通信</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">串口通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id3">红外通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#i2c">I2C通信</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#spi">SPI通信</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/14Storage">存储</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/15Network">网络</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/16Factory">Factory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id1">准备工作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contents.html#id2">重写程序</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/AVR/17Tools">工具</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#arduino-esp8266">Arduino ESP8266编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#arduino-esp32">Arduino ESP32编程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/ESP32/Handbit">掌控板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-Arduino/ESP32/MixGo">MixGo</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-MicroPython/index">MicroPython 编程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-MicroPython/01Input-Output">输入/输出</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-MicroPython/02Control">控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-MicroPython/Handbit">掌控板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contents.html#document-MicroPython/MixGo">MixGo</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-Python/index">Python 编程</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html#document-contents">Mixly Wiki</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html#document-contents">Docs</a> &raquo;</li>
+        
+      <li>Mixly Wiki</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>软件使用基础<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-basic/index"></span><div class="section" id="id1">
+<h2>软件使用基础<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-basic/01Mixly_introduction"></span><div class="section" id="mixly">
+<h3>Mixly 简介<a class="headerlink" href="#mixly" title="永久链接至标题">¶</a></h3>
+<p>Mixly（米思齐）是一款图形化编程软件。用户可以通过拼接积木块的方式来编写程序。目前为止，Mixly已经支持Arduino，micropython，python等编程语言。</p>
+<img alt="_images/mixly.png" src="_images/mixly.png" />
+<div class="section" id="id1">
+<h4>简介<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h4>
+<p>Mixly（米思齐）是在北京师范大学教育学部创客教育实验室负责人傅骞老师的带领下，由其团队开发的一款国内自主研发，且免费开源的图形化编程工具。在国内外都掀起创客教育的浪潮中，傅骞老师认真分析了当前电子领域内的创客教育，并认为“如果不能给学生提供一个足够简单的、不能给教师提供一个容易上手的，不能给各大生产厂商提供一个足够自主的编程工具，所谓的“创”也只能是停留在表面的浮云，风一吹便散。”为了大力贯彻落实创客实验室“自主实践，分享快乐”的教育理念，傅骞老师带领其团队，开发出具有易用性、简单性、功能性、普适性、延续性及生态性等特点的Mixly。</p>
+</div>
+<div class="section" id="id2">
+<h4>特点<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id3">
+<h5>易用性<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h5>
+<p>当前多数中小学机房安装了硬盘保护卡，频繁的软件安装与更新工作，给机房的管理工作造成极大的不便。为此，Mixly在设计上做到了完全绿色使用。用户直接从网上下载Mixly软件包，解压后即可在Windows XP及以上的操作系统运行。软件无需额外安装浏览器，也不用安装Java运行环境，极大方便了师生的使用。</p>
+</div>
+<div class="section" id="id4">
+<h5>简单性<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<p>Mixly采用了Blockly图形化编程引擎，使用图形化的积木块代替了复杂的文本操作，为学生的快速入门奠定了良好的基础。另外，Mixly的开发团队使用以下方式来帮助师生快速熟悉软件：第一，用不同颜色的示意图标代表不同类型的功能块，方便用户归类区分；第二，在复合功能块中提供默认选项，有效减少用户的拖动次数；第三，在同一个界面整合软件的所有功能；第四，提供参考教程及代码示例。</p>
+</div>
+<div class="section" id="id5">
+<h5>功能性<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>当前，很多学校将组织或参与创客类比赛作为创客教育的一种途径，比赛的竞技性对软件的功能提出了更高的要求。因此，Mixly在功能的设计上力求和Arduino IDE的文本编程保持一致，目前最新发布的Mixly 0.97版已经实现Arduino的所有官方功能（包括中断处理），并加入了大量的第三方扩展库功能，如红外遥控、超声波等，可以保证课程开设和各类创客比赛的双重需求。</p>
+</div>
+<div class="section" id="id6">
+<h5>普适性<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>Mixly在设计上考虑了绝对的普适性。首先，对于Arduino官方支持的所有开发板，Mixly都提供了完美的支持：Mixly会根据开发板的类型自动改变模块中的管脚号、中断号、模拟输出管脚等；其次，对于Arduino支持的第三方开发板，Mixly同样支持，用户只要把相应开发板的定义复制到Mixly中即可。如国内大量的ESP8266开发板、各类用户修改后的开发板等等，以保证用户在开发板选择上的最大自由度。</p>
+</div>
+<div class="section" id="id7">
+<h5>延续性<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h5>
+<p>图形化编程系统的目标绝对不是替换原有的文本编程方式，而是希望学生通过图形化编程更好更快地理解编程的原理和程序的思维，并为未来的文本编程打好基础。Mixly的设计理念也是如此。在软件的设计上加入了更多的可延续性内容，从而保护用户的学习成果。具体来说，包括引入变量类型、在模块的设计上尽量保持和文本编程的一致、支持图形编程和文本编程的对照等。</p>
+</div>
+<div class="section" id="id8">
+<h5>生态性<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h5>
+<p>生态性是Mixly最重要的设计理念，也是它区别于其它Arduino图形化编程的最重要特征。为了实现Mixly可持续发展，Mixly在设计上既允许厂商开发自己的特有模块（当前已经支持DfRobot、StartLab、MakeBlock、Sense、Seeed、Lubot，Microduino、Ruilong、NodeMcu，Nova，用户需要有JavaScript编程基础才能制作这部分模块），也允许用户直接利用Mixly的图形化编程功能生成通用模块（如数码管显示、蜂鸣音播报等，用户只需会使用Mixly即可制作这部分模块）。以上两类模块均可通过“导入库”功能导入Mixly系统，从而在Mixly软件的普及中实现用户自身的价值。</p>
+</div>
+</div>
+</div>
+<span id="document-basic/02Installation-update"></span><div class="section" id="id1">
+<h3>软件安装与更新<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>目前最新版本为1.0.0，支持Windows 7/8/10、MacOS。</p>
+<div class="section" id="id2">
+<h4>下载软件<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<ul class="simple">
+<li><a class="reference external" href="http://116.62.49.166/">下载地址1</a></li>
+<li><a class="reference external" href="https://pan.baidu.com/s/1Rrgu0lvOWxTf0gp7kma3-A">百度网盘</a>  提取码：f3mh</li>
+</ul>
+</div>
+<div class="section" id="windows">
+<h4>Windows版本安装<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id5">
+<h5>解压软件<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>下载Mixly1.0_WIN.7z压缩包，右键解压到本地磁盘。</p>
+<p><strong>建议解压到硬盘根目录，路径不要包含中文。如D:Mixly1.0_WIN</strong></p>
+<p>解压后目录如图所示。</p>
+<img alt="_images/install1.png" src="_images/install1.png" />
+</div>
+<div class="section" id="id6">
+<h5>驱动安装<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>开发板与电脑连接通讯需要安装相应的串口芯片驱动，常用的串口芯片驱动有CH340和CP2102。
+在arduino/drivers目录中可以找到这两种串口芯片驱动。</p>
+<img alt="_images/install2.png" src="_images/install2.png" />
+<p>根据使用的开发板的串口芯片选择相应的驱动，如果不确定是哪种串口芯片，也可以将两个驱动都安装上。</p>
+</div>
+<div class="section" id="id7">
+<h5>启动软件<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h5>
+<p>双击Mixly.exe即可启动Mixly软件。</p>
+<img alt="_images/install3.png" src="_images/install3.png" />
+</div>
+<div class="section" id="id8">
+<h5>更新软件<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h5>
+<p>Mixly软件的更新是基于git设计的，每次更新会自动对比最新版与用户使用的版本的差异，只更新差异文件，避免重复下载造成版本混乱。</p>
+<p>第一次更新前需要安装git安装包，双击git.exe,默认设置安装即可。</p>
+<img alt="_images/install4.png" src="_images/install4.png" />
+<p>安装完成后，重启计算机。</p>
+<p>先关闭Mixly软件，再双击 一键更新.bat 启动更新程序。</p>
+<img alt="_images/install5.png" src="_images/install5.png" />
+<p>稍等片刻后，更新完成。</p>
+<img alt="_images/install6.png" src="_images/install6.png" />
+</div>
+</div>
+<div class="section" id="mac">
+<h4>Mac版本安装<a class="headerlink" href="#mac" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id9">
+<h5>解压软件<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h5>
+<p>下载jre-8u221-macosx-x64.dmg Java 安装包，根据提示默认安装。</p>
+<p>下载Mixly1.0_MAC.zip压缩包，右键解压到本地磁盘。</p>
+<p>解压后目录如图所示。</p>
+<img alt="_images/install1.png" src="_images/install1.png" />
+</div>
+<div class="section" id="id10">
+<h5>驱动安装<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h5>
+<p>开发板与电脑连接通讯需要安装相应的串口芯片驱动，常用的串口芯片驱动有CH340和CP2102。
+Mixly/drivers目录中可以找到这两种串口芯片驱动。</p>
+<img alt="_images/install2.png" src="_images/install2.png" />
+<p>根据使用的开发板的串口芯片选择相应的驱动，如果不确定是哪种串口芯片，也可以将两个驱动都安装上。</p>
+</div>
+<div class="section" id="id11">
+<h5>启动软件<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h5>
+<p>双击Mixly.jar即可启动Mixly软件。</p>
+<img alt="_images/install3.png" src="_images/install3.png" />
+</div>
+</div>
+</div>
+<span id="document-basic/03Interface_introduction"></span><div class="section" id="id1">
+<h3>界面介绍<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>Mixly软件主要分成图形化程序选择区、图形化程序编辑区、代码预览区、系统功能区、消息提示区。</p>
+<img alt="_images/interface0.png" src="_images/interface0.png" />
+<div class="section" id="id2">
+<h4>图形化程序选择区<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<p>图形化程序选择区中包含了各类图形化程序，每一个类别中都包含多个图形化。通过将这些图形块拖动到图形化程序编辑区就可以完成编程。</p>
+<img alt="_images/block_area.png" src="_images/block_area.png" />
+</div>
+<div class="section" id="id3">
+<h4>程序编写区<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<img alt="_images/block_coding_area.png" src="_images/block_coding_area.png" />
+<div class="section" id="id4">
+<h5>程序编写<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<p>我们通常把能完成一定功能的代码块拖动到该区域处进行连接。</p>
+</div>
+<div class="section" id="id5">
+<h5>程序删除<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>将不需要的代码拖到右下方的垃圾桶。</li>
+<li>将不用的代码拖到最左侧的图形化程序选择区。</li>
+<li>选中不用的代码后点击键盘Delete或者Backspace键。</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h5>程序缩放<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>在右下角垃圾桶上方有缩放按钮。</p>
+<ul class="simple">
+<li>第一个按钮是图形块大小正常化并居中。</li>
+<li>第二个是放大图形块。</li>
+<li>第三个是缩小图形块。</li>
+</ul>
+<p>当然也可以直接使用鼠标滚轮进行缩放。</p>
+</div>
+<div class="section" id="id7">
+<h5>程序整理<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h5>
+<p>当编写的程序比较多时，需要对程序进行整理。</p>
+<p>在空白区右击，选择清理块。</p>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">只有当有多个分离块时，才能进行整理。</p>
+</div>
+<img alt="_images/clear_block.png" src="_images/clear_block.png" />
+</div>
+<div class="section" id="id8">
+<h5>程序复制<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>在图形块上右击，选择复制，会产生一个一样的块，但该方式只能复制一个块。</li>
+</ul>
+<img alt="_images/copy_block.png" src="_images/copy_block.png" />
+<ul class="simple">
+<li>先用鼠标拖住多个块，再按下Ctrl+C，Ctrl+V可以复制多块。</li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h5>切换语言<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h5>
+<p>在该区域的右上角，还可以选取语言的种类。</p>
+<p>截止目前为止，Mixly可支持英语、西班牙语、简体中文及繁体中文。</p>
+<img alt="_images/language.png" src="_images/language.png" />
+</div>
+<div class="section" id="id10">
+<h5>撤销及重做<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h5>
+<p>在选择语言的左边还有两个箭头，分别是撤销（undo，Ctrl + Z）及重做（redo，Ctrl + Y）。</p>
+<p>撤销功能是当我们编写代码时误删代码后，便可点击左箭头或直接按Ctrl + Z来恢复误删代码。</p>
+<p>而重做则是和Ctrl + Z相反，它是恢复上一步操作，该功能也可通过点击右箭头或直接键入Ctrl + Y 来实现。</p>
+</div>
+<div class="section" id="id11">
+<h5>帮助文档<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h5>
+<p>在选择语言的左侧?图标是帮助文档的链接，点击该图标可以打开帮助文档。</p>
+</div>
+</div>
+<div class="section" id="id12">
+<h4>代码预览区<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h4>
+<img alt="_images/code_area.png" src="_images/code_area.png" />
+<p>该区域可通过点击右侧深灰色箭头来显示或隐藏。</p>
+<p>在图形化程序选择区拖拽图形块后，在代码编辑区会生成对应的代码。可以帮助用户掌握代码的学习。</p>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">在该区域无法直接对代码进行编辑，需要点击图形化程序选择区左上角的 代码 按钮才能进行编辑。</p>
+</div>
+<div class="section" id="id13">
+<h5>消息提示区<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h5>
+<p>消息提示区通常是给学生予以信息反馈的场所。比如编译或上传进程中，编译或上传是否成功，如果失败原因是什么；或者是导入库是否成功等消息。</p>
+<img alt="_images/22-1.png" src="_images/22-1.png" />
+</div>
+<div class="section" id="id14">
+<h5>系统功能区<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h5>
+<p>系统功能区主要执行的功能有新建、打开、保存、另存为、导出库、导入库、管理库、编译、上传、选择主控板型号及端口、串口监视器及软件界面放大缩小等功能。</p>
+<img alt="_images/system_function.png" src="_images/system_function.png" />
+</div>
+</div>
+<div class="section" id="id15">
+<h4>一般功能<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h4>
+<img alt="_images/file_function.png" src="_images/file_function.png" />
+<p>Mixly的一般功能包括新建、打开、保存、另存为，其中代码保存或另存为的格式为.mix或者.ino。</p>
+<p>当用户需要打开已保存的文件时，可以先打开Mixly软件，再点击“打开”，找到*.mix文件。也可以直接双击*.mix文件打开。</p>
+</div>
+<div class="section" id="id16">
+<h4>库功能<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h4>
+<p>为了方便用户使用及代码分享，Mixly特增加了库功能。库功能分别包括：导出库，导入库以及管理库。
+当用户编写完一段代码后（比如语音播报），可这个代码集成在一个函数中（假设该函数为sayNum）。之后只需要点击导出库并给该库起个名字便能使用。</p>
+<img alt="_images/23-2.png" src="_images/23-2.png" />
+<p>保存后就可以将该库上传至平台，供他人下载使用、学习。</p>
+<p>当有人下载该代码后，可直接将该库进行导入并使用。点击导入库找到该文件的位置。</p>
+<img alt="_images/23-3.png" src="_images/23-3.png" />
+<p>导入后界面会刷新，耐心等待1-2秒，便可在模块选择区见到新导入的库，同时，在消息提示区也会提示“导入自定义库成功！”接着可直接点击sayNum库，将指令拖入程序构建区，调用该函数即可。</p>
+<img alt="_images/23-4.png" src="_images/23-4.png" />
+<img alt="_images/23-5.png" src="_images/23-5.png" />
+<p>管理库的功能是可以对已导入的库进行重命名、删除和打开目录。</p>
+<img alt="_images/23-6.png" src="_images/23-6.png" />
+</div>
+<div class="section" id="id17">
+<h4>编译&amp;上传<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h4>
+<p>当用户编写完代码后，如果想要检查代码逻辑是否有误，可点击编译。</p>
+<p>如果显示“编译失败”，则需要根据提示检查自己的代码，如显示“编译成功”则证明代码逻辑上无误，可上传。</p>
+<p>如果出现“上传失败”，大多数情况插拔USB线即可解决该问题。</p>
+<p>如果出现“上传成功”，则证明代码已上传至板子上。当然，如果用户对于代码逻辑信心十足，可直接点击上传按钮。</p>
+</div>
+<div class="section" id="id18">
+<h4>板卡&amp;端口<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h4>
+<img alt="_images/23-7.png" src="_images/23-7.png" />
+<p>当用户点击主控板下拉三角时即可看到有众多主控板型号可供选择。用户需按照当前手中主控板型号予以选择。</p>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">开始编程前就要先选择板卡，编写好程序再切换板卡将导致程序丢失。</p>
+</div>
+<img alt="_images/board_select.png" src="_images/board_select.png" />
+<p>选择好板卡后，还需要选择该板卡对应的端口号，端口号是计算机与板卡通信的通道。</p>
+<img alt="_images/23-9.png" src="_images/23-9.png" />
+</div>
+<div class="section" id="id19">
+<h4>串口监视器<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h4>
+<p>串口监视器与模块选择区的通信模块中的串口通信指令一起使用。假设学生已连接红外接收管，他可通过串口监视器时时观测遥控器上不同按钮的十六进制数（其中，只有FD开头的数才是真正的接收数值，其他数据均为干扰数据）。
+需要注意的是，在使用串口监视器后需及时关闭。如果在没有关闭串口监视器的情况下进行代码的再次上传，往往是失败的。因为串口监视器工作时占用了主控板的相关端口，使得上传失败。</p>
+<img alt="_images/23-10.png" src="_images/23-10.png" />
+</div>
+<div class="section" id="id20">
+<h4>界面缩放<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h4>
+<p>在串口监视器右侧有一个左右可拉的按钮，该按钮可放大或缩小Mixly整个界面的大小。与程序构建区内的放大、缩小不同（该按钮只可放大或缩小程序构建区代码的大小），拖动缩放界面可放大除消息提示区外所有区域的大小。</p>
+<img alt="_images/23-11.png" src="_images/23-11.png" />
+</div>
+</div>
+<span id="document-basic/24.Example"></span><div class="section" id="id1">
+<h3>范例<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>创客教育的核心不是知识的重复复制或复杂功能的底层实现，而是激发学生的创新并享受分享所带来的快乐。基于Mixly的创意电子课程也要遵循这样的理念。遂从Mixly的技术特点出发，将Mixly的应用模式分为以下几类：
+### 模仿延展类
+该模式主要用于Mixly初学者学习创意电子的基础知识，其具体步骤如下：
+* 由教师创设情境，并提出本次课（活动）的具体任务；
+* 启发学生思考，得出实现本任务的基本思路并鼓励学生尝试实现；
+* 教师给出参考实例，学生基于教师的代码模仿完成；
+* 教师给出扩展任务方向，引导学生修改原有的代码实现。</p>
+<p>下面以《两只老虎》为例描述这一过程。本课的目标是让学生学会使用蜂鸣器播放简单的音乐。首先，教师需要讲解基本乐理知识及Mixly中声音的播放方法，然后引导学生思考并鼓励学生尝试实现。在实际教学中，学生最初的实现过于浅显，与目标任务相差甚远。在给出合适的鼓励后再给出如图4-1所示的实现方式（使用四个数组分别用来表示基本音阶、音乐的音高、变调和时长），并引导学生进行模仿。模仿成功后，教师需要讲解实现的基本原理并给出延伸任务，让学生设计更复杂的音乐。事实上，学生只需简单地修改数组就可以播放出不同的音乐。</p>
+<img alt="_images/24-1.png" src="_images/24-1.png" />
+<div class="section" id="id2">
+<h4>创意整合类<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<p>该模式主要用于具有一定Mixly基础的学生针对某一技术的创意整合应用，其具体步骤如下：
+* 由教师创设情境，并提出一个特定的功能需求；
+* 启发学生思考，得出实现功能的基本思路；
+* 教师给出功能的具体实现模块，学生导入并体验；
+* 激发学生创新，结合本模块和先前知识给出创意应用。</p>
+<p>下面以《语音温度计》为例描述这一过程。本课的目标是实现低成本的人机交互。首先，教师抛出问题：如何才能让用户知道Arduino中的结果数据?学生一般会给出各种各样的答案，教师在给出合理的正向反馈后分析各种答案的可行性，并引导学生提出通过蜂鸣器播报数据的方案。在此基础上，给出相应的扩展库让学生尝试使用（一般不建议让学生理解该库的实现原理，只需会用即可）。然后，教师需要激发学生思考如何利用该库完成创新应用。图4-2给出了一个语音温度计的Mixly实现（LM35和A0相连，蜂鸣器和10号管脚相连），图4-3则是语音播报库的具体实现。</p>
+<img alt="_images/24-2.png" src="_images/24-2.png" />
+<img alt="_images/24-3.png" src="_images/24-3.png" />
+</div>
+<div class="section" id="id3">
+<h4>协同合作类<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<p>该模式主要用于Mixly专业学习者协同完成综合性任务，其具体步骤如下：
+* 学生以小组为单位，通过协商得出要做的综合任务目标；
+* 教师在听取学生的汇报后，给出项目的可行性评估及实现建议；
+* 学生在教师的帮助下完成基于模块的任务分工并实现最初的设计；
+* 小组汇总程序、进行调试，并完成最终成果的展示。</p>
+<p>下面以在中学讲授《创意电子》课程的一个小组综合项目为例，描述这一过程。本课的目标是使学生综合运用元件和所学知识开发出一个创意作品。此前，教师应讲解在复杂的程序设计中代码模块化的意义，并给出一些具体的例子。在此基础上，学生自愿结为两人小组，提出创意。此处仅以其中一组学生设计并实现的温控报警散热器为例，描述后续过程。小组成员提出，使用温度传感器、蜂鸣器、LED灯、数码管等元件制作一个具有显示温度和报警功能的散热器。学生描述功能并进一步对其进行分解，除了使用到教师提供的一位共阳数码管库外，还构建了呈现彩色灯（colorRGB）、电扇开关控制（fan）、声光报警（ring）、获取温度（getTem）四个函数。
+开发过程灵活使用了Mixly的导入/导出库功能：一位同学负责物理连接和四个子函数的编写并使用“导出库”功能将其导出成库文件，另一位同学负责基于功能描述设计整体逻辑并在导入该文件后完成主函数的编写。图4-4、图4-5分别是该作品的库文件代码和主程序代码，图4-6是该作品的实物图。</p>
+<img alt="_images/24-4.png" src="_images/24-4.png" />
+<img alt="_images/24-5.png" src="_images/24-5.png" />
+</div>
+</div>
+<span id="document-basic/26.Company"></span><div class="section" id="id1">
+<h3>自定义公司库<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>Mixly方便各大硬件厂商技术人员编写自己公司产品的库以供用户使用。编写库的人员只需具备最基础的程序设计知识，了解公司库编写的规则，即可完成公司库的编写。
+### 一个完整的公司库的目录
+下面是一个名为xxx的公司库的完整目录：
+.. image:: images/26/26-1.png</p>
+<p>该目录下不是所有的文件都是必须的，视公司库的具体情况而定。
+下面就对每一个目录进行说明。</p>
+<div class="section" id="blockgenerator">
+<h4>block和generator<a class="headerlink" href="#blockgenerator" title="永久链接至标题">¶</a></h4>
+<p>block和generator文件夹下分别有一个JS文件，一般是同名的，比如xxx.js。block/xxx.js文件定义了你定制的图形化模块的样子。
+generator/xxx.js文件定义了每一个图形化模块对应的Arduino代码。比如下图就是“延时”的图形化模块的样子及其对应的Arduino代码：</p>
+<img alt="_images/26-2.png" src="_images/26-2.png" />
+<p>block和generator目录通常是必不可少的，因此保证block/xxx.js和generator/xxx.js的正确性是成功定制公司库的关键。
+比如“延时”模块的两部分JS代码分别如下：</p>
+<img alt="_images/26-3.png" src="_images/26-3.png" />
+<img alt="_images/26-4.png" src="_images/26-4.png" />
+<p>对于这两个JS文件如何书写，在软件的blockly/blocks和blockly/generators/arduino目录下有大量的例子，基本包含了全部类型的图形化模块的定制方法。如果您想更深入的了解这些代码，您可以访问Google的blockly源码进行更加深入的研究。</p>
+</div>
+<div class="section" id="hardware">
+<h4>hardware目录<a class="headerlink" href="#hardware" title="永久链接至标题">¶</a></h4>
+<p>hardware目录不是必需的目录，通常在公司使用了自己的Arduino板子（即官方的Arduino IDE没有我们所需要的板子）时，才需要hardware目录，该目录包含了一些跟硬件相关的信息，比如板子信息，管脚信息等等。因此，需要比较专业的技术人员进行定制此目录。最后是一个以公司名（比如xxx）命名的文件夹形式存在，直接拷贝至hardware目录下即可。</p>
+</div>
+<div class="section" id="xxx">
+<h4>xxx目录<a class="headerlink" href="#xxx" title="永久链接至标题">¶</a></h4>
+<p>xxx目录是自己的Arduino库，xxx一般以公司名命名，里面包含一些.cpp和.h文件，这个目录也不是必需的，一般在生成的代码中有#include &lt;xxx.h&gt;时需要。</p>
+</div>
+<div class="section" id="companypin">
+<h4>companypin目录<a class="headerlink" href="#companypin" title="永久链接至标题">¶</a></h4>
+<p>companypin目录定义了公司所需板子的管脚对应关系，该目录也是非必需的，通常在公司使用了全新的Arduino板子时才需要。
+下面以lubot的新板子Lubot MK为例：</p>
+<img alt="_images/26-5.png" src="_images/26-5.png" />
+<p>我们想为这块板子定义新的管脚对应关系，先在companypin目录下建立子文件夹lubot（通常以公司名命名），再建立pin.js文件，打开pin.js文件，管脚定义如下图所示（包括数字管脚、模拟管脚、PWM管脚、中断管脚以及Serial选择和默认波特率）：</p>
+<img alt="_images/26-6.png" src="_images/26-6.png" />
+</div>
+<div class="section" id="language">
+<h4>language目录<a class="headerlink" href="#language" title="永久链接至标题">¶</a></h4>
+<p>![]如果想让公司库支持多国语言，就需要language目录，这个也是非必需的。
+先在language目录下建立子文件夹xxx（通常以公司名命名），再在xxx文件夹下建立多国语言文件。如下图所示：分别是英语、西班牙语、简体中文、繁体中文。在这些多国语言的js文件中定义了一些JS常量。</p>
+<img alt="_images/26-7.png" src="_images/26-7.png" />
+<p>下面讲解如何定义这些JS文件，还是以“延时”模块为例，下面分别是英语、西班牙语、简体中文、繁体中文对应的样子：</p>
+<img alt="_images/26-8.png" src="_images/26-8.png" />
+<img alt="_images/26-9.png" src="_images/26-9.png" />
+<img alt="_images/26-10.png" src="_images/26-10.png" />
+<img alt="_images/26-11.png" src="_images/26-11.png" />
+<p>再来看如何在语言文件中定义对应的文字。</p>
+<img alt="_images/26-12.png" src="_images/26-12.png" />
+<img alt="_images/26-13.png" src="_images/26-13.png" />
+<img alt="_images/26-14.png" src="_images/26-14.png" />
+<img alt="_images/26-15.png" src="_images/26-15.png" />
+<p>最后在block/xxx.js文件中引用即可：
+.. image:: images/26/26-16.png</p>
+</div>
+<div class="section" id="media">
+<h4>media目录<a class="headerlink" href="#media" title="永久链接至标题">¶</a></h4>
+<p>media目录下是一些媒体文件，主要是图片，这个目录是非必需的。只有当模块需要使用图片时才需要该文件夹。比如下面这个模块里面就嵌入了一张图片：
+.. image:: images/26/26-17.png</p>
+<p>所有的媒体文件放在media/xxx下即可，xxx是子文件夹，通常以公司名命名
+xxx.xml文件
+—————
+xxx.xml文件是一个非常重要的文件，它是必不可少，通常以公司名命名。在这个文件中定义了所有需要呈现的模块，以及整个库中相关文件的路径（即前面提过的这些文件目录）。
+下面是一个空例子，可以基于这个例子进行修改。</p>
+<img alt="_images/26-18.png" src="_images/26-18.png" />
+</div>
+<div class="section" id="mixly">
+<h4>把写好的库导入Mixly<a class="headerlink" href="#mixly" title="永久链接至标题">¶</a></h4>
+<p>当我们把整个库写好之后，就可以把写好的库导入到Mixly中去了。打开Mixly软件（版本要求0.964及以上）。点击“导入库”  找到xxx.xml文件。
+.. image:: images/26/26-19.png</p>
+<p>点击打开就完成整个公司库的导入（前提是公司库必须正确）。</p>
+</div>
+</div>
+<span id="document-basic/27.Third-Party"></span><div class="section" id="id1">
+<h3>第三方库开发<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>Mixly特设了第三方拓展功能。方便各大硬件厂商技术人员编写自己公司产品的库以供用户使用。截止Mixly0.97版本，现第三方扩展有：DFROBOT、SEEEDSTUDIO、MAKEBLOCK、MBOT机器人、SENSE盒子、SENSE机器人、LuBot、Micoduino、Nova。</p>
+</div>
+<span id="document-basic/25.FAQ"></span><div class="section" id="faq">
+<h3>FAQ<a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h3>
+<p>下面是用户常见的一些问题及解决方案。</p>
+<ul class="simple">
+<li>同一个库在995上可以使用，但在996、997上使用不了</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">解决方法：这是由于blockly核心升级导致的，新版的blockly不再向前兼容。可采用如下二种方法：
+- 方法1：采用&gt;=998版本；
+- 方法2：将旧版库里block/XX.js中全局替换appendTitle为appendField，将generator/XX.js中全局替换getTitleValue为getFieldValue</p>
+</div>
+<ul class="simple">
+<li>arduino系列板子，点击上传后出现`avrdude: stk500v2_ReceiveMessage(): timeout`</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">解决方法：按下列可能方法依次检查。
+- 方法1： 板子下拉框中选的板子型号和实际计算机连接的板子型号不对；
+- 方法2： 串口下拉框选择不对，可通过设备管理器查看板子对应的是哪个串口；
+- 方法3： 板子与电脑接口松动。可尝试拔了板子，再重新插上；
+- 方法4： 数据线坏了，可尝试换数据线；
+- 方法5： 板子换了，可尝试换新板子；</p>
+</div>
+<ul class="simple">
+<li>Mixly 支持在哪些操作系统编程？</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<ul class="last simple">
+<li>目前Mixly软件支持在WIN7/10,MacOS上运行。</li>
+<li>早期版本 Mixly0.995支持在Windows XP上运行，后期版本不再支持。</li>
+<li>Mixly软件不支持在安卓手机、安卓平板、苹果手机、苹果平板等移动设备上运行。</li>
+<li>Mixly软件也不支持在树莓派上运行。</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Mixly 支持给哪些硬件进行编程？</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<ul class="last simple">
+<li>arduino 系列</li>
+<li><dl class="first docutils">
+<dt>ESP8266 系列</dt>
+<dd><ul class="first last">
+<li>Ruilong Esp8266 Board</li>
+<li>Wemos D1</li>
+<li>NodeMCU</li>
+<li>…</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Eep32 系列</dt>
+<dd><ul class="first last">
+<li>掌控板</li>
+<li>MixGo</li>
+<li>Esp32</li>
+<li>…</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Micro:bit</li>
+</ul>
+</div>
+<ul class="simple">
+<li>Mixly 支持使用哪些语言进行编程？</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<ul class="last simple">
+<li>Mixly本身采用图形化编程，但实际是将图形化程序转化为代码后再上传到开发板。</li>
+<li>因此，从代码上来说，Mixly支持Arduino C语言, microPython 语言编程。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="arduino-avr">
+<h1>Arduino AVR 编程<a class="headerlink" href="#arduino-avr" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-Arduino/index"></span><div class="section" id="arduino-avr">
+<h2>Arduino AVR编程<a class="headerlink" href="#arduino-avr" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-Arduino/AVR/01Input-Output"></span><div class="section" id="id1">
+<h3>输入/输出<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>输入/输出所包含的指令主要分为四部分：控制管脚的输入输出（按信号类型可分为数字信号和模拟信号）、中断、脉冲长度及ShiftOut。</p>
+<ul class="simple">
+<li>输入输出：数字输入、数字输出、模拟输入、模拟输出</li>
+<li>中断控制：定义中断，取消中断</li>
+<li>脉冲长度</li>
+<li>移位输出</li>
+</ul>
+<img alt="_images/inout.png" src="_images/inout.png" />
+<div class="section" id="id2">
+<h4>数字输出<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/digitalWrite.png" src="_images/digitalWrite.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span><span class="c1">//输出高电平</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span><span class="c1">//输出低电平</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id3">
+<h5>描述<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">给一个数字引脚写入HIGH或者LOW。</p>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">数字13号引脚难以作为数字输入使用，因为大部分的控制板上使用了一颗LED与一个电阻连接到他。如果启动了内部的20K上拉电阻，他的电压将在1.7V左右，而不是正常的5V，因为板载LED串联的电阻把他使他降了下来，这意味着他返回的值总是LOW。如果必须使用数字13号引脚的输入模式，需要使用外部上拉下拉电阻。</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h5>参数<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚: 引脚编号（如1,5,10，A0，A3）</li>
+<li>值: 高 或 低</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h5>范例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>将13号端口设置为高电平，延迟一秒，然后设置为低电平，再延迟一秒，如此往复。</p>
+<img alt="_images/digitalWrite-example.png" src="_images/digitalWrite-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id6">
+<h5>注释<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>模拟引脚也可以当做数字引脚使用，使用方法是管脚设置为A0，A1，A2等。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h4>数字输入<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<img alt="_images/digitalRead.png" src="_images/digitalRead.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id8">
+<h5>描述<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">读取指定引脚的值，HIGH或LOW。</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h5>参数<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚: 引脚编号（如1,5,10,A0,A3）</li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h5>返回<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h5>
+<p>HIGH 或 LOW</p>
+</div>
+<div class="section" id="id11">
+<h5>范例<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h5>
+<p>读取数字0号引脚的值，并通过串口打印出来。</p>
+<img alt="_images/digitalRead-example.png" src="_images/digitalRead-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id12">
+<h5>注释<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">如果引脚悬空，digitalRead()会返回HIGH或LOW（随机变化）。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id13">
+<h4>模拟输入<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h4>
+<img alt="_images/analogRead.png" src="_images/analogRead.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id14">
+<h5>描述<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>从指定的模拟引脚读取数据值。</p>
+<p class="last">Arduino板包含一个6通道（Mini和Nano有8个通道，Mega有16个通道），10位模拟数字转换器。这意味着它将0至5伏特之间的输入电压映射到0至1023之间的整数值。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h5>参数<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚: 引脚编号（如A0,A1,A2,A3）不同的开发板模拟输入引脚数量不一样。</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h5>返回<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h5>
+<p>从0到1023的整数值</p>
+</div>
+<div class="section" id="id17">
+<h5>范例<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h5>
+<p>读取模拟A0引脚的值，并通过串口打印出来。</p>
+<img alt="_images/analogRead-example.png" src="_images/analogRead-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id18">
+<h5>注释<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">如果模拟输入引脚没有连入电路，由analogRead()返回的值将根据多项因素（例如其他模拟输入引脚，你的手靠近板子等）产生波动。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id19">
+<h4>模拟输出<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h4>
+<img alt="_images/analogWrite.png" src="_images/analogWrite.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">analogWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">100</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id20">
+<h5>描述<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">从一个引脚输出模拟值（PWM）。
+可用于让LED以不同的亮度点亮或驱动电机以不同的速度旋转。</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h5>参数<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚:引脚编号（如3,5,6,9,10,11）不同的开发板模拟输入引脚数量不一样。</li>
+<li>赋值:0（完全关闭）到255（完全打开）之间。</li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h5>范例<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h5>
+<p>控制LED实现呼吸灯效果。</p>
+<img alt="_images/analogWrite-example.png" src="_images/analogWrite-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+<span class="n">analogWrite</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+<span class="n">analogWrite</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+<span class="n">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id23">
+<h5>注释<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">analogWrite函数与模拟引脚、analogRead函数没有直接关系。
+在大多数Arduino板（ATmega168或ATmega328），只有引脚3，5，6，9，10和11可以实现该功能。
+在Arduino Mega上，引脚2到13可以实现该功能。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id24">
+<h4>中断指令<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h4>
+<img alt="_images/interrupt.png" src="_images/interrupt.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">attachInterrupt_fun_2</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">attachInterrupt_fun_2</span><span class="p">,</span><span class="n">RISING</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id25">
+<h5>描述<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>当发生外部中断时，调用一个指定函数。当中断发生时，该函数会取代正在执行的程序。</p>
+<p>大多数的Arduino板有两个外部中断：0（数字引脚2）和1（数字引脚3）。</p>
+<p>Arduino Mege有四个外部中断：数字2（引脚21），3（20针），4（引脚19），5（引脚18）。</p>
+<p class="last">ESP8266 、ESP32系列有更多中断。</p>
+</div>
+</div>
+<div class="section" id="id26">
+<h5>参数<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h5>
+<ul>
+<li><p class="first">管脚: 引脚编号（如2,3）不同的开发板中断引脚不一样。</p>
+</li>
+<li><p class="first">模式：</p>
+<blockquote>
+<div><p>改变：当引脚电平发生改变时，触发中断</p>
+<p>上升：当引脚由低电平变为高电平时，触发中断</p>
+<p>下降：当引脚由高电平变为低电平时，触发中断</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h5>范例<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h5>
+<p>利用2号引脚中断，控制13号引脚的LED亮灭。</p>
+<a class="reference internal image-reference" href="_images/interrupt-example.png"><img alt="_images/interrupt-example.png" src="_images/interrupt-example.png" style="width: 350pt;" /></a>
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">volatile</span> <span class="n">boolean</span> <span class="n">state</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">attachInterrupt_fun_2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">state</span> <span class="o">=</span> <span class="o">!</span><span class="n">state</span><span class="p">;</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">state</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">state</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">attachInterrupt_fun_2</span><span class="p">,</span><span class="n">RISING</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id28">
+<h5>注释<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">当中断函数发生时，delay()和millis()的数值将不会继续变化。当中断发生时，串口收到的数据可能会丢失。你应该声明一个变量来在未发生中断时储存变量。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id29">
+<h4>取消中断<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h4>
+<img alt="_images/detachinterrupt.png" src="_images/detachinterrupt.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">detachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id30">
+<h5>描述<a class="headerlink" href="#id30" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">关闭给定的中断。</p>
+</div>
+</div>
+<div class="section" id="id31">
+<h5>参数<a class="headerlink" href="#id31" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚: 引脚编号（如2,3）不同的开发板中断引脚不一样。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id32">
+<h4>脉冲长度<a class="headerlink" href="#id32" title="永久链接至标题">¶</a></h4>
+<img alt="_images/pulseIn.png" src="_images/pulseIn.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">pulseIn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+
+<span class="n">pulseIn</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id33">
+<h5>描述<a class="headerlink" href="#id33" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>读取一个引脚的脉冲（HIGH或LOW）。</p>
+<p class="last">例如，如果value是HIGH，pulseIn()会等待引脚变为HIGH，开始计时，再等待引脚变为LOW并停止计时。返回脉冲的长度，单位微秒。如果在指定的时间内无脉冲，函数返回。
+此函数的计时功能由经验决定，长时间的脉冲计时可能会出错。计时范围从10微秒至3分钟。（1秒=1000毫秒=1000000微秒）</p>
+</div>
+</div>
+<div class="section" id="id34">
+<h5>参数<a class="headerlink" href="#id34" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚:你要进行脉冲计时的引脚号（int）。</li>
+<li>状态:要读取的脉冲类型，HIGH或LOW（int）。</li>
+<li>超时 (可选）:指定脉冲计数的等待时间，单位为微秒，默认值是1秒（unsigned long）。</li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h5>返回<a class="headerlink" href="#id35" title="永久链接至标题">¶</a></h5>
+<p>脉冲长度（微秒），如果等待超时返回0（unsigned long）</p>
+</div>
+<div class="section" id="id36">
+<h5>范例<a class="headerlink" href="#id36" title="永久链接至标题">¶</a></h5>
+<p>读取6号引脚脉冲时长。</p>
+<img alt="_images/pulseIn-example.png" src="_images/pulseIn-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">pulseIn</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">));</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="shiftout">
+<h4>ShiftOut<a class="headerlink" href="#shiftout" title="永久链接至标题">¶</a></h4>
+<img alt="_images/shiftOut.png" src="_images/shiftOut.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">shiftOut</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">MSBFIRST</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span><span class="c1">//高位先入</span>
+<span class="n">shiftOut</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LSBFIRST</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span><span class="c1">//低位先入</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id37">
+<h5>描述<a class="headerlink" href="#id37" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">将一个数据的一个字节一位一位的移出。从最高有效位（最左边）或最低有效位（最右边）开始。依次向数据脚写入每一位，之后时钟脚被拉高或拉低，指示刚才的数据有效。</p>
+</div>
+</div>
+<div class="section" id="id38">
+<h5>参数<a class="headerlink" href="#id38" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>数据管脚：输出每一位数据的引脚(int)</li>
+<li>时钟管脚：时钟脚，当数据管脚有值时此引脚电平变化(int)</li>
+<li>顺序：输出位的顺序，最高位优先或最低位优先</li>
+<li>数值: 要移位输出的数据(byte)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id39">
+<h4>管脚中断<a class="headerlink" href="#id39" title="永久链接至标题">¶</a></h4>
+<img alt="_images/PCintPort_attachInterrupt.png" src="_images/PCintPort_attachInterrupt.png" />
+<div class="section" id="id40">
+<h5>描述<a class="headerlink" href="#id40" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>当发生外部中断时，调用一个指定函数。当中断发生时，该函数会取代正在执行的程序。</p>
+<p class="last">本模块为模拟中断，支持所有管脚使用。</p>
+</div>
+</div>
+<div class="section" id="id41">
+<h5>参数<a class="headerlink" href="#id41" title="永久链接至标题">¶</a></h5>
+<ul>
+<li><p class="first">管脚: 引脚编号（如2,3）不同的开发板中断引脚不一样。</p>
+</li>
+<li><dl class="first docutils">
+<dt>模式：</dt>
+<dd><p class="first">改变：当引脚电平发生改变时，触发中断</p>
+<p>上升：当引脚由低电平变为高电平时，触发中断</p>
+<p class="last">下降：当引脚由高电平变为低电平时，触发中断</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="id42">
+<h5>范例<a class="headerlink" href="#id42" title="永久链接至标题">¶</a></h5>
+<p>利用中断，控制13号引脚的LED亮灭。</p>
+</div>
+<div class="section" id="id43">
+<h5>注释<a class="headerlink" href="#id43" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">当中断函数发生时，delay()和millis()的数值将不会继续变化。当中断发生时，串口收到的数据可能会丢失。你应该声明一个变量来在未发生中断时储存变量。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id44">
+<h4>取消管脚中断<a class="headerlink" href="#id44" title="永久链接至标题">¶</a></h4>
+<img alt="_images/detachinterrupt.png" src="_images/detachinterrupt.png" />
+<div class="section" id="id45">
+<h5>描述<a class="headerlink" href="#id45" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">关闭给定的中断。</p>
+</div>
+</div>
+<div class="section" id="id46">
+<h5>参数<a class="headerlink" href="#id46" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>管脚: 引脚编号（如2,3）不同的开发板中断引脚不一样。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id47">
+<h4>多功能按键<a class="headerlink" href="#id47" title="永久链接至标题">¶</a></h4>
+<img alt="_images/multifunctionButton.png" src="_images/multifunctionButton.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">OneButton</span> <span class="nf">button0</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">attachClick0</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">button0</span><span class="p">.</span><span class="n">attachClick</span><span class="p">(</span><span class="n">attachClick0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="n">button0</span><span class="p">.</span><span class="n">tick</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id48">
+<h5>描述<a class="headerlink" href="#id48" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">设置特定管脚连接的按钮为多功能按钮，并确定不同模式下执行不同的程序。</p>
+</div>
+</div>
+<div class="section" id="id49">
+<h5>参数<a class="headerlink" href="#id49" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>多功能按键: 引脚编号（如1,5,10，A0，A3）</li>
+<li>模式: 单击 双击 长按开始 长按中 长按结束</li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h5>范例<a class="headerlink" href="#id50" title="永久链接至标题">¶</a></h5>
+<p>将2号端口连接的按钮设置为多功能按钮，单击时串口提示“one Click”</p>
+<img alt="_images/multifunctionButton-example.png" src="_images/multifunctionButton-example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">OneButton</span> <span class="nf">button2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nb">true</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">attachClick2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;one Click&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">button2</span><span class="p">.</span><span class="n">attachClick</span><span class="p">(</span><span class="n">attachClick2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="n">button2</span><span class="p">.</span><span class="n">tick</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+</div>
+<span id="document-Arduino/AVR/02Control"></span><div class="section" id="id1">
+<h3>控制<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>控制类别中包括了时间延迟、条件执行、循环执行、获取运行时间、初始化、Switch执行等
+控制模块中主要执行的内容是对程序结构进行的相应控制。</p>
+<img alt="_images/control.png" src="_images/control.png" />
+<div class="section" id="id2">
+<h4>初始化<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/setup.png" src="_images/setup.png" />
+<div class="section" id="id3">
+<h5>描述<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">在Arduino中程序运行时将首先调用 setup()函数。
+用于初始化变量、设置针脚的输出输入类型、配置串口、引入类库文件等等。</p>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p class="last">每次 Arduino 上电或重启后，setup 函数只运行一次。</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h5>范例<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<p>初始化时声明变量。</p>
+<img alt="_images/setup_example-1.png" src="_images/setup_example-1.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">volatile</span> <span class="kt">int</span> <span class="n">item</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="n">item</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id5">
+<h5>范例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>在初始化时定义中断函数。</p>
+<img alt="_images/setup_example-2.png" src="_images/setup_example-2.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">attachInterrupt_fun_2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">attachInterrupt_fun_2</span><span class="p">,</span><span class="n">RISING</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="while">
+<h4>while 循环<a class="headerlink" href="#while" title="永久链接至标题">¶</a></h4>
+<img alt="_images/while.png" src="_images/while.png" />
+<div class="section" id="id6">
+<h5>描述<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">while循环会无限的循环，直到括号内的判断语句变为假。
+必须要有能改变判断语句的东西，要不然while循环将永远不会结束。你可以使用一个传感器的值，或者一个变量来控制什么时候停止该循环。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h5>参数<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>满足条件：为真或为假的一个条件。</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h5>范例<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h5>
+<p>当温度高于30度时，亮灯，否则灭灯。</p>
+<img alt="_images/while_example.png" src="_images/while_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">)</span><span class="o">*</span><span class="mf">0.488</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h4>延时<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
+<img alt="_images/delay.png" src="_images/delay.png" />
+<div class="section" id="id10">
+<h5>描述<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">使程序暂定设定的时间（单位毫秒）。（一秒等于1000毫秒）。</p>
+</div>
+</div>
+<div class="section" id="id11">
+<h5>参数<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>毫秒：暂停的毫秒数。</li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h5>范例<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h5>
+<p>13号引脚灯亮1秒，灭1秒，往复循环。</p>
+<img alt="_images/delay_example.png" src="_images/delay_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id13">
+<h5>注释<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h5>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<p>虽然创建一个使用delay()的闪烁LED很简单，并且许多例子将很短的delay用于消除开关抖动。</p>
+<p>但delay()确实拥有很多显著的缺点。在delay函数使用的过程中，读取传感器值、计算、引脚操作均无法执行，因此，它所带来的后果就是使其他大多数活动暂停。大多数熟练的程序员通常避免超过10毫秒的delay(),除非arduino程序非常简单。</p>
+<p class="last">利用定时器，就可以解决这个问题，可以避免由于delay()带来的CPU暂停，也能很好地实现每隔一定时间执行动作。</p>
+</div>
+</div>
+</div>
+<div class="section" id="if">
+<h4>如果(if)<a class="headerlink" href="#if" title="永久链接至标题">¶</a></h4>
+<img alt="_images/if.png" src="_images/if.png" />
+<div class="section" id="id14">
+<h5>描述<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">if 语句与比较运算符一起用于检测某个条件是否达成，如某个传感器的值是否等于某个值。</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h5>参数<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>条件：比较表达式</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h5>用法<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h5>
+<p>增加条件：如果需要增加条件，可以点开齿轮，然后将左侧的“否则如果”或者“否则”模块拖到右侧的“如果”之中。</p>
+<img alt="_images/if-2.png" src="_images/if-2.png" />
+</div>
+<div class="section" id="id17">
+<h5>范例<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h5>
+<p>当连接在2号引脚的按键按下时，点亮13号引脚的灯。</p>
+<img alt="_images/if_example1.png" src="_images/if_example1.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>如果判断的条件大于等于1时，可以省略等于判断，因为只要 该表达式的结果不为0，则为真。</p>
+<p>所以，上面的写法与下面的写法等效。</p>
+<img alt="_images/if_example3.png" src="_images/if_example3.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id18">
+<h5>范例<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h5>
+<p>当连接在2号引脚的按键按下时，点亮13号引脚的灯;当按键松开时，灯灭。</p>
+<img alt="_images/if_example2.png" src="_images/if_example2.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id19">
+<h5>注释<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div>另外一种进行多种条件分支判断的语句是switch case语句。</div></blockquote>
+</div>
+</div>
+<div class="section" id="switch">
+<h4>如果(switch)<a class="headerlink" href="#switch" title="永久链接至标题">¶</a></h4>
+<img alt="_images/switch.png" src="_images/switch.png" />
+<div class="section" id="id20">
+<h5>描述<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>和if语句相同，switch…case通过设定的在不同条件下执行的代码控制程序的流程。</p>
+<p>特别地，switch语句将变量值和case语句中设定的值进行比较。当一个case语句中的设定值与变量值相同时，这条case语句将被执行。</p>
+<p class="last">关键字break可用于退出switch语句，通常每条case语句都以break结尾。如果没有break语句，switch语句将会一直执行接下来的语句（一直向下）直到遇见一个break，或者直到switch语句结尾。</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h5>参数<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>var: 用于与下面的case中的标签进行比较的变量值</li>
+<li>label: 与变量进行比较的值</li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h5>用法<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h5>
+<p>增加case：如果需要增加条件，可以点开齿轮，然后将左侧的“case”或者“default”模块拖到右侧的“switch”之中。</p>
+<img alt="_images/switch2.png" src="_images/switch2.png" />
+</div>
+<div class="section" id="id23">
+<h5>范例<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h5>
+<p>当连接在2号引脚的按键按下时，点亮13号引脚的灯，否则13号引脚的灯灭</p>
+<img alt="_images/switch_example.png" src="_images/switch_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id24">
+<h5>注释<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div>每个switch可以有多个case，但是最多不超过一个default，当不满足任何一个case时，执行default中的程序。</div></blockquote>
+</div>
+</div>
+<div class="section" id="for">
+<h4>for循环<a class="headerlink" href="#for" title="永久链接至标题">¶</a></h4>
+<img alt="_images/for.png" src="_images/for.png" />
+<div class="section" id="id25">
+<h5>描述<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>for循环用于重复执行一段的程序。通常使用一个增量计数器计数并终止循环。</p>
+<p class="last">for循环用于重复性的操作非常有效，通常与数组结合起来使用来操作数据、引脚。</p>
+</div>
+</div>
+<div class="section" id="id26">
+<h5>参数<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>变量名：用于记录for循环次数的变量名。</li>
+<li>起始值：循环的计数起始值，一般从0开头，也可以从其他数值开始。</li>
+<li>终点值：循环的计数终点值。</li>
+<li>步长：每次循环的步长，一般为1，也可以是其他整数。</li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h5>用法<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h5>
+<p>可自行设置循环的变量名称，并确定循环的开始和终止以及循环方向，最后一个数字可以为负数。</p>
+<img alt="_images/for2.png" src="_images/for2.png" />
+</div>
+<div class="section" id="id28">
+<h5>范例<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h5>
+<p>将连接在3号引脚的灯制作成呼吸灯，每一次亮度变化之间间隔50毫秒</p>
+<img alt="_images/for_example.png" src="_images/for_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="p">}</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id29">
+<h5>注释<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div>for循环中定义的变量有名字，可以用字母i,j,k或单词red,state等有意义的词语表示。</div></blockquote>
+</div>
+</div>
+<div class="section" id="id30">
+<h4>跳出循环<a class="headerlink" href="#id30" title="永久链接至标题">¶</a></h4>
+<img alt="_images/break.png" src="_images/break.png" />
+<div class="section" id="id31">
+<h5>描述<a class="headerlink" href="#id31" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>跳出循环用于终止一段重复的程序，一般使用时作为条件语句的执行部分，当循环中的变量满足某个条件时，执行跳出循环语句。</p>
+<p class="last">跳出循环在处理循环中的特殊情况时十分有用。</p>
+</div>
+</div>
+<div class="section" id="id32">
+<h5>参数<a class="headerlink" href="#id32" title="永久链接至标题">¶</a></h5>
+<ul class="simple">
+<li>操作：可以选择跳出循环和跳到下一个循环两种操作，结果不同。</li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h5>用法<a class="headerlink" href="#id33" title="永久链接至标题">¶</a></h5>
+<p>可直接加到循环语句当中，一般自行添加条件语句进行判断，判断为真时执行跳出循环语句。</p>
+<img alt="_images/break2.png" src="_images/break2.png" />
+</div>
+<div class="section" id="id34">
+<h5>范例<a class="headerlink" href="#id34" title="永久链接至标题">¶</a></h5>
+<p>引脚3上的数字从0到255逐一增加，每一次增加之间间隔50毫秒，当数字增加到150时停止增加</p>
+<img alt="_images/break_example.png" src="_images/break_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">255</span><span class="p">;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">150</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+    <span class="n">analogWrite</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id35">
+<h5>注释<a class="headerlink" href="#id35" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div>注意跳到下一个循环的使用，可以方便的将循环中不需要的步骤跳过。</div></blockquote>
+</div>
+</div>
+<div class="section" id="id36">
+<h4>系统运行时间<a class="headerlink" href="#id36" title="永久链接至标题">¶</a></h4>
+<img alt="_images/millis.png" src="_images/millis.png" />
+<div class="section" id="id37">
+<h5>描述<a class="headerlink" href="#id37" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回自硬件启动或重启以来的时间值。</p>
+</div>
+</div>
+<div class="section" id="id38">
+<h5>返回<a class="headerlink" href="#id38" title="永久链接至标题">¶</a></h5>
+<p>自硬件启动或重启以来的时间，毫秒数或者微秒数。</p>
+</div>
+<div class="section" id="id39">
+<h5>用法<a class="headerlink" href="#id39" title="永久链接至标题">¶</a></h5>
+<p>返回系统运行时间，赋给某一变量，进行进一步的功能设计。</p>
+<img alt="_images/millis2.png" src="_images/millis2.png" />
+</div>
+<div class="section" id="id40">
+<h5>范例<a class="headerlink" href="#id40" title="永久链接至标题">¶</a></h5>
+<p>自动换行打印系统运行时间</p>
+<img alt="_images/millis_example.png" src="_images/millis_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">millis</span><span class="p">());</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="mstimer2">
+<h4>MsTimer2 定时器<a class="headerlink" href="#mstimer2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/mstimer2.png" src="_images/mstimer2.png" />
+<div class="section" id="id41">
+<h5>描述<a class="headerlink" href="#id41" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">每隔设置的毫秒数执行相应的程序</p>
+</div>
+</div>
+<div class="section" id="id42">
+<h5>用法<a class="headerlink" href="#id42" title="永久链接至标题">¶</a></h5>
+<p>设置计时器的时间：计时器的时间可以进行修改。
+主要用于设计定时改变状态的程序，可以通过计时器时间间隔设置进行状态会更改程序的运行。</p>
+</div>
+<div class="section" id="id43">
+<h5>范例<a class="headerlink" href="#id43" title="永久链接至标题">¶</a></h5>
+<p>利用定时器控制13号引脚LED每隔1秒亮灭一次。</p>
+<img alt="_images/mstimer2_example.png" src="_images/mstimer2_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;MsTimer2.h&gt;</span><span class="cp"></span>
+<span class="k">volatile</span> <span class="n">boolean</span> <span class="n">state</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">msTimer2_func</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">state</span> <span class="o">=</span> <span class="o">!</span><span class="n">state</span><span class="p">;</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">state</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">state</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">MsTimer2</span><span class="o">::</span><span class="n">set</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="n">msTimer2_func</span><span class="p">);</span>
+  <span class="n">MsTimer2</span><span class="o">::</span><span class="n">start</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id44">
+<h5>注释<a class="headerlink" href="#id44" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div><p>利用定时器可以提高硬件的工作效率。</p>
+<p>但在一个程序中只能使用一个MsTimer2定时器，如果要实现多个时间的定时，可以配合变量计数来完成。</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id45">
+<h4>MsTimer2 定时器启动<a class="headerlink" href="#id45" title="永久链接至标题">¶</a></h4>
+<img alt="_images/mstimer2begin.png" src="_images/mstimer2begin.png" />
+<div class="section" id="id46">
+<h5>描述<a class="headerlink" href="#id46" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">MsTimer2定时器开始计时</p>
+</div>
+</div>
+<div class="section" id="id47">
+<h5>用法<a class="headerlink" href="#id47" title="永久链接至标题">¶</a></h5>
+<p>需要使用MsTimer2计时器时，需要先插入MsTimer2定时器启动模块，开始计时，需要与MsTimer2定时器配合使用。</p>
+</div>
+</div>
+<div class="section" id="id48">
+<h4>MsTimer2 定时器停止<a class="headerlink" href="#id48" title="永久链接至标题">¶</a></h4>
+<img alt="_images/mstimer2stop.png" src="_images/mstimer2stop.png" />
+<div class="section" id="id49">
+<h5>描述<a class="headerlink" href="#id49" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">MsTimer2定时器停止计时</p>
+</div>
+</div>
+<div class="section" id="id50">
+<h5>用法<a class="headerlink" href="#id50" title="永久链接至标题">¶</a></h5>
+<p>需要使用MsTimer2计时器时，需要先插入MsTimer2定时器启动模块，开始计时，需要与MsTimer2定时器配合使用，插入停止模块后计时器停止计时。</p>
+</div>
+</div>
+<div class="section" id="id51">
+<h4>允许中断<a class="headerlink" href="#id51" title="永久链接至标题">¶</a></h4>
+<img alt="_images/allinterruption.png" src="_images/allinterruption.png" />
+<div class="section" id="id52">
+<h5>描述<a class="headerlink" href="#id52" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">允许输入/输出模块中管脚中断的运行</p>
+</div>
+</div>
+<div class="section" id="id53">
+<h5>用法<a class="headerlink" href="#id53" title="永久链接至标题">¶</a></h5>
+<p>主要用于加入禁止中断模块后恢复中断执行。</p>
+</div>
+<div class="section" id="id54">
+<h5>范例<a class="headerlink" href="#id54" title="永久链接至标题">¶</a></h5>
+<p>使用按钮模拟开关，每次按下，LED灯切换亮灭</p>
+<img alt="_images/allinterruption_example.png" src="_images/allinterruption_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">attachInterrupt_fun_2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">10</span><span class="p">,(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">10</span><span class="p">)));</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">interrupts</span><span class="p">();</span>
+  <span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">attachInterrupt_fun_2</span><span class="p">,</span><span class="n">RISING</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="id55">
+<h4>禁止中断<a class="headerlink" href="#id55" title="永久链接至标题">¶</a></h4>
+<img alt="_images/nointerruption.png" src="_images/nointerruption.png" />
+<div class="section" id="id56">
+<h5>描述<a class="headerlink" href="#id56" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">禁止输入/输出模块中管脚中断的运行</p>
+</div>
+</div>
+<div class="section" id="id57">
+<h5>用法<a class="headerlink" href="#id57" title="永久链接至标题">¶</a></h5>
+<p>主要用于禁止中断模块的中断执行。</p>
+</div>
+<div class="section" id="id58">
+<h5>范例<a class="headerlink" href="#id58" title="永久链接至标题">¶</a></h5>
+<p>在允许中断范例的基础上，尝试禁止中断</p>
+<img alt="_images/nointerruption_example.png" src="_images/nointerruption_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">attachInterrupt_fun_2</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">10</span><span class="p">,(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">10</span><span class="p">)));</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">noInterrupts</span><span class="p">();</span>
+  <span class="n">attachInterrupt</span><span class="p">(</span><span class="n">digitalPinToInterrupt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">attachInterrupt_fun_2</span><span class="p">,</span><span class="n">RISING</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="scoop-task">
+<h4>SCoop Task<a class="headerlink" href="#scoop-task" title="永久链接至标题">¶</a></h4>
+<img alt="_images/scoop.png" src="_images/scoop.png" />
+<div class="section" id="id59">
+<h5>描述<a class="headerlink" href="#id59" title="永久链接至标题">¶</a></h5>
+<p>SCoop模块用于执行多线程任务，最多支持8个任务。</p>
+</div>
+<div class="section" id="id60">
+<h5>用法<a class="headerlink" href="#id60" title="永久链接至标题">¶</a></h5>
+<p>在sCoop task中编写每个线程需要执行的任务。</p>
+</div>
+<div class="section" id="id61">
+<h5>范例<a class="headerlink" href="#id61" title="永久链接至标题">¶</a></h5>
+<p>利用SCoop，控制13号引脚LED灯以2秒的频率闪烁，同时控制12号引脚的LED灯以200毫秒的频率闪烁。</p>
+<img alt="_images/scoop_example.png" src="_images/scoop_example.png" />
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;SCoop.h&quot;</span><span class="cp"></span>
+<span class="n">defineTask</span><span class="p">(</span><span class="n">scoopTask1</span><span class="p">)</span>
+<span class="kt">void</span> <span class="n">scoopTask1</span><span class="o">::</span><span class="n">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">scoopTask1</span><span class="o">::</span><span class="n">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">defineTask</span><span class="p">(</span><span class="n">scoopTask2</span><span class="p">)</span>
+<span class="kt">void</span> <span class="n">scoopTask2</span><span class="o">::</span><span class="n">setup</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">scoopTask2</span><span class="o">::</span><span class="n">loop</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">HIGH</span><span class="p">);</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+  <span class="n">digitalWrite</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="n">LOW</span><span class="p">);</span>
+  <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">setup</span><span class="p">(){</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+  <span class="n">mySCoop</span><span class="p">.</span><span class="n">start</span><span class="p">();</span>
+  <span class="n">pinMode</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="n">loop</span><span class="p">(){</span>
+  <span class="n">yield</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+</div>
+<span id="document-Arduino/AVR/03Mathematics"></span><div class="section" id="id1">
+<h3>数学<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>该部分主要完成数学变换功能，具体包括数字映射、数字约束、数学运算、取整、随机、三角函数。</p>
+<img alt="_images/math.png" src="_images/math.png" />
+<div class="section" id="id2">
+<h4>数字常量<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/number.png" src="_images/number.png" />
+<div class="section" id="id3">
+<h5>描述<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h5>
+<p>数字常量包括 整数常量和浮点常量。</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>整数常量是直接在程序中使用的数字，如123。默认情况下，这些数字被视为int类型。通常情况下，整数常量默认为十进制，但可以加上特殊前缀表示为其他进制。如：B0111，表示二进制；0173,表示八进制；0x7B，表示十六进制。</p>
+<p class="last">浮点常量也可以直接中程序中使用，如12.3。默认情况下，这些数字被视为float类型。也可以使用科学计数法表示浮点数。如：2.34E5代表2.34 * 10^5，其实际值为234000；67E-12代表67.0 * 10^-12，其实际值为0.000000000067。</p>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>数学运算<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<img alt="_images/math_operation.png" src="_images/math_operation.png" />
+<div class="section" id="id5">
+<h5>描述<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">数学运算中包括加、减、乘、除、取模、幂运算。
+这些运算将会返回两个操作数的和,差,乘积,商，取模、幂。</p>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">注意</p>
+<ul class="last simple">
+<li>这些运算是根据操作数的数据类型来计算的,比如 9和4都是int类型,所以9/4结果是2。</li>
+<li>如果想要两个整数相除得到小数，就需要将整数转换成小数。如9.0/2.0=4.5 。</li>
+<li>这也就代表如果运算结果比数据类型所能容纳的范围要大的话，就会出现溢出。例如. 1加上一个整数 int类型 32,767 结果变成-32,768。</li>
+<li>如果操作数是不同类型的,结果是“更大”的那种数据类型。如果操作数中的其中一个是 float类型或者double类型, 就变成了浮点数运算。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h5>参数<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>常量或变量</p>
+</div>
+<div class="section" id="id7">
+<h5>返回值<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h5>
+<p>两个操作数的和,差,乘积,商，取模、幂。</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h4>位运算<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<img alt="_images/math_bit_operation.png" src="_images/math_bit_operation.png" />
+<div class="section" id="id9">
+<h5>描述<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">按位操作符对变量进行位级别的计算。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h5>按位与(&amp;)<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h5>
+<p>按位与操作符一个&amp;符，用在两个整型变量之间。按位与运算符对两侧的变量的每一位都进行运算。</p>
+<p>规则是：如果两个运算元都是1，则结果为1，否则输出0。</p>
+<p>如： 0011&amp;0101=0001</p>
+<p>在Arduino中，int类型为16位，所以在两个int表达式之间使用&amp;会进行16个并行按位与计算。代码片段就像这样：</p>
+<p>int a =  92;    //二进制:  0000000001011100</p>
+<p>int b = 101;    //二进制:  0000000001100101</p>
+<p>int c = a &amp; b;  //结果:    0000000001000100</p>
+<p>a和b的16位每位都进行按位与计算，计算结果存在c中，二进制结果是01000100，十进制结果是68.</p>
+</div>
+<div class="section" id="id11">
+<h5>按位或(|)<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h5>
+<p>按位或操作符是|。和&amp;操作符类似，<a href="#id12"><span class="problematic" id="id13">|</span></a>操作符对两个变量的为一位都进行运算，只是运算规则不同。</p>
+<p>按位或规则：只要两个位有一个为1则结果为1，否则为0。</p>
+<p>如：0011|0101=0111</p>
+<p>int a =  92;    // 二进制: 0000000001011100</p>
+<p>int b = 101;    //二进制: 0000000001100101</p>
+<p>int c = a | b;  // 结果:  0000000001111101, 或十进制的125</p>
+</div>
+<div class="section" id="id14">
+<h5>按位异或(^)<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h5>
+<p>按位异或是一个不常见的操作符，也叫做XOR（通常读作”eks-or“）。</p>
+<p>按位异或操作符用 ^ 表示。按位异或是如果两个位值相同则结果为0，否则为1。</p>
+<p>如：0011^0101=0110</p>
+</div>
+<div class="section" id="id15">
+<h5>左移位运算(&lt;&lt;)<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h5>
+<p>左移位运算可使左运算元中的某些位移动右运算元中指定的位数。</p>
+<p>如：
+int a = 5;        // 二进制数: 0000000000000101</p>
+<p>int b = a &lt;&lt; 3;   // 二进制数: 0000000000101000, 或十进制数：40</p>
+<p>//当你将x左移y位时（x«y），x中最左边的y位会逐个逐个的丢失：</p>
+<p>int a = 5;        // 二进制: 0000000000000101</p>
+<p>int b = a &lt;&lt; 14;  // 二进制: 0100000000000000 - 101中最左边的1被丢弃</p>
+<p>如果你确定位移不会引起数据溢出，你可以简单的把左移运算当做对左运算元进行2的右运算元次方的操作。</p>
+</div>
+<div class="section" id="id16">
+<h5>右移位运算(&gt;&gt;)<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h5>
+<p>右移位运算与左移位运算类似。</p>
+</div>
+</div>
+<div class="section" id="id17">
+<h4>三角函数及其他<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h4>
+<img alt="_images/math_trig.png" src="_images/math_trig.png" />
+<div class="section" id="sin">
+<h5>sin<a class="headerlink" href="#sin" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">计算角度的正弦（弧度）。其结果在-1和1之间。</p>
+</div>
+<ul class="simple">
+<li>参数: 弧度制的角度（float）</li>
+<li>返回值:角度的正弦值（double）</li>
+</ul>
+</div>
+<div class="section" id="cos">
+<h5>cos<a class="headerlink" href="#cos" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">计算一个角度的余弦值（用弧度表示）。返回值在 -1 和 1 之间。</p>
+</div>
+<ul class="simple">
+<li>参数: 弧度制的角度（float）</li>
+<li>返回值:角度的正弦值（double）</li>
+</ul>
+</div>
+<div class="section" id="tan">
+<h5>tan<a class="headerlink" href="#tan" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">计算角度的正切（弧度）。结果在负无穷大和无穷大之间。</p>
+</div>
+<ul class="simple">
+<li>参数: 弧度制的角度（float）</li>
+<li>返回值:角度的正切值</li>
+</ul>
+</div>
+<div class="section" id="asin">
+<h5>asin<a class="headerlink" href="#asin" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">反正弦函数为正弦函数sin的反函数。</p>
+</div>
+<ul class="simple">
+<li>参数: [-1,1]</li>
+<li>返回值:[-π/2,π/2]</li>
+</ul>
+</div>
+<div class="section" id="acos">
+<h5>acos<a class="headerlink" href="#acos" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">反余弦函数为余弦函数cos的反函数。</p>
+</div>
+<ul class="simple">
+<li>参数: [-1,1]</li>
+<li>返回值:[0,π]</li>
+</ul>
+</div>
+<div class="section" id="atan">
+<h5>atan<a class="headerlink" href="#atan" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">反正切函数为正切函数tan的反函数。</p>
+</div>
+<ul class="simple">
+<li>参数: [-∞,∞]</li>
+<li>返回值:(-π/2,π/2)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>数学运算2<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h4>
+<img alt="_images/round.png" src="_images/round.png" />
+<div class="section" id="round">
+<h5>取整（四舍五入）(round)<a class="headerlink" href="#round" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的四舍五入取整值。如round(4.1)=4;round(5.6)=6。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的四舍五入取整值</li>
+</ul>
+</div>
+<div class="section" id="ceil">
+<h5>取整（取上限）(ceil)<a class="headerlink" href="#ceil" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的下一个整数，如果输入的本身就是整数，则返回自身。如ceil(4.1)=5;ceil(5.6)=6,ceil(7)=7。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的下一个整数或自身。</li>
+</ul>
+</div>
+<div class="section" id="floor">
+<h5>取整（取下限）(floor)<a class="headerlink" href="#floor" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的前一个整数，如果输入的本身就是整数，则返回自身。如 floor(4.1)=4;floor(5.6)=5,floor(7)=7。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的前一个整数或自身。</li>
+</ul>
+</div>
+<div class="section" id="abs">
+<h5>取绝对值(abs)<a class="headerlink" href="#abs" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的绝对值。如abs(4.1)=4;abs(-5.6)=5,abs(7)=7。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的绝对值。</li>
+</ul>
+</div>
+<div class="section" id="sq">
+<h5>平方(sq)<a class="headerlink" href="#sq" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的平方。如 sq(4)=16;sq(-5)=25,sq(7)=49。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的平方。</li>
+</ul>
+</div>
+<div class="section" id="sqrt">
+<h5>平方根(sqrt)<a class="headerlink" href="#sqrt" title="永久链接至标题">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回给定值的正平方根。如 sqrt(4)=2;sqrt(25)=5。</p>
+</div>
+<ul class="simple">
+<li>参数: 数值或变量。</li>
+<li>返回值:给定值的正平方根。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="min-max">
+<h4>取最大(小)值(min/max)<a class="headerlink" href="#min-max" title="永久链接至标题">¶</a></h4>
+<img alt="_images/max.png" src="_images/max.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">返回两个数值或变量中最大或最小值。</p>
+</div>
+<ul class="simple">
+<li>参数:数值或者变量</li>
+<li>返回值:最大值或最小值</li>
+</ul>
+</div>
+<div class="section" id="randomseed">
+<h4>初始化随机数(randomseed)<a class="headerlink" href="#randomseed" title="永久链接至标题">¶</a></h4>
+<img alt="_images/randomseed.png" src="_images/randomseed.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p>使用randomSeed()初始化伪随机数生成器，使生成器在随机序列中的任意点开始。</p>
+<p class="last">使用随机数之前，需要先使用初始化随机数模块。</p>
+</div>
+</div>
+<div class="section" id="random">
+<h4>随机数(random)<a class="headerlink" href="#random" title="永久链接至标题">¶</a></h4>
+<img alt="_images/random.png" src="_images/random.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">使用随机数模块可以产生一个给定范围之间的随机数。</p>
+</div>
+<ul>
+<li><p class="first">参数</p>
+<blockquote>
+<div><p>min - 随机数的最小值，随机数将包含此值。 （此参数可选）</p>
+<p>max - 随机数的最大值，随机数不包含此值。</p>
+</div></blockquote>
+</li>
+<li><p class="first">返回</p>
+<blockquote>
+<div><p>min和max-1之间的随机数（ 数据类型为long ）</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="constrain">
+<h4>约束(constrain)<a class="headerlink" href="#constrain" title="永久链接至标题">¶</a></h4>
+<img alt="_images/constrain.png" src="_images/constrain.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">约束是将数值限制在最小值与最大值之间，所有小于最小值的数值被赋值为最小值，同理，所有大于最大值的数被赋值为最大值。</p>
+</div>
+<ul>
+<li><p class="first">参数</p>
+<blockquote>
+<div><p>x：要被约束的数字，所有的数据类型适用。</p>
+<p>a：该范围的最小值，所有的数据类型适用。</p>
+<p>b：该范围的最大值，所有的数据类型适用。</p>
+</div></blockquote>
+</li>
+<li><p class="first">返回值</p>
+<blockquote>
+<div><p>x：如果 x是介于 a 和 b之间</p>
+<p>a：如果 x小于a</p>
+<p>b：如果 x大于b</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="map">
+<h4>映射(map)<a class="headerlink" href="#map" title="永久链接至标题">¶</a></h4>
+<img alt="_images/map.png" src="_images/map.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">约束是将数值限制在最小值与最大值之间，所有小于最小值的数值被赋值为最小值，同理，所有大于最大值的数被赋值为最大值。</p>
+</div>
+<ul>
+<li><p class="first">参数</p>
+<blockquote>
+<div><p>x：要被约束的数字，所有的数据类型适用。</p>
+<p>a：该范围的最小值，所有的数据类型适用。</p>
+<p>b：该范围的最大值，所有的数据类型适用。</p>
+</div></blockquote>
+</li>
+<li><p class="first">返回值</p>
+<blockquote>
+<div><p>x：如果 x是介于 a 和 b之间</p>
+<p>a：如果 x小于a</p>
+<p>b：如果 x大于b</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<span id="document-Arduino/AVR/04Logic"></span><div class="section" id="id1">
+<h3>逻辑<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>逻辑模块中的指令大多是逻辑运算处理内容，具体可分为：条件判断、逻辑运算、？运算。</p>
+<img alt="_images/logic1.png" src="_images/logic1.png" />
+</div>
+<span id="document-Arduino/AVR/05Text"></span><div class="section" id="id1">
+<h3>文本<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>文本的具体内容为代码的文本输出功能，具体包括：文本连接、文本转数字、数字转文本。</p>
+<img alt="_images/text.png" src="_images/text.png" />
+<p>所有文本内容可通过串口监视器或外接显示屏打印。</p>
+<div class="section" id="id2">
+<h4>字符串<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/string.png" src="_images/string.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">字符串常量。</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h4>字符<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<img alt="_images/char.png" src="_images/char.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">字符常量。</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h4>字符串连接<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<img alt="_images/stringPlus.png" src="_images/stringPlus.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">字符串连接，可以将两个或者多个字符串连接成一个。</p>
+</div>
+<div class="section" id="id5">
+<h5>范例<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>连接多个字符串。</p>
+<img alt="_images/stringPlus_example.png" src="_images/stringPlus_example.png" />
+</div>
+</div>
+<div class="section" id="toint-tofloat">
+<h4>字符串转数字(toInt()/toFloat())<a class="headerlink" href="#toint-tofloat" title="永久链接至标题">¶</a></h4>
+<img alt="_images/stringtonum.png" src="_images/stringtonum.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">将字符串中的数字转成整数或者小数。</p>
+</div>
+</div>
+<div class="section" id="ascii-char">
+<h4>转ASCII字符(char())<a class="headerlink" href="#ascii-char" title="永久链接至标题">¶</a></h4>
+<img alt="_images/numtochar.png" src="_images/numtochar.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">将数字转成ASCII字符。</p>
+</div>
+</div>
+<div class="section" id="ascii-toascii">
+<h4>转ASCII数值(toascii)<a class="headerlink" href="#ascii-toascii" title="永久链接至标题">¶</a></h4>
+<img alt="_images/toascii.png" src="_images/toascii.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">将字符转成ASCII码。</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h4>进制 转字符串<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<img alt="_images/numtostring.png" src="_images/numtostring.png" />
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">将一个数字转化为字符串，支持二进制、八进制、十进制、十六进制数字。</p>
+</div>
+</div>
+<div class="section" id="string-length">
+<h4>获取字符串长度(String().length())<a class="headerlink" href="#string-length" title="永久链接至标题">¶</a></h4>
+<img alt="_images/stringlength.png" src="_images/stringlength.png" />
+</div>
+<div class="section" id="n">
+<h4>获取字符串第N个字符<a class="headerlink" href="#n" title="永久链接至标题">¶</a></h4>
+<img alt="_images/charat.png" src="_images/charat.png" />
+</div>
+<div class="section" id="id7">
+<h4>字符串比较1<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<img alt="_images/equals.png" src="_images/equals.png" />
+</div>
+<div class="section" id="id8">
+<h4>字符串比较2<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<img alt="_images/compare.png" src="_images/compare.png" />
+</div>
+</div>
+<span id="document-Arduino/AVR/06Lists"></span><div class="section" id="id1">
+<h3>数组<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>数组是为了便于代码编写时所采用的一种数字块。具体包括：定义数组、取数组值、改数组值。</p>
+<img alt="_images/array.png" src="_images/array.png" />
+<p>数组像一个大盒子，可以储存一定个数的数字（第一个指令）或字符串（第二个指令）。在课程中的音乐盒一课，我们就用到了数组。</p>
+<img alt="_images/array2.png" src="_images/array2.png" />
+<p>如上图，tonelist, musiclist, highlist, rhythmlist分别储存了歌曲《两只老虎》的基本频率（即哆来咪等七音的对应频率），频率变化（即两只老虎的简谱数字），每个音的音名CDEFGAB以及每个音的时值（长短）。
+《两只老虎》共有三十二个音，因此使用了一个从1到32的循环语句以此读取第一个音的频率变化（简谱，并通过.. image:: images/06Lists/array3.png语句可读取简谱的基本频率），随后与获取highlist里的对应音高并按thythmlist里的时值进行相应延时。
+该代码将《两只老虎》的指令放到了一个名为playmusic的函数内，并通过执行 playmusic调用该函数。关于函数的内容，我们将在下面函数部分具体详解。</p>
+<div class="section" id="id2">
+<h4>创建数组1<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/def_array1.png" src="_images/def_array1.png" />
+</div>
+<div class="section" id="id3">
+<h4>创建数组2<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<img alt="_images/def_array2.png" src="_images/def_array2.png" />
+</div>
+<div class="section" id="id4">
+<h4>获取长度<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<img alt="_images/sizeof.png" src="_images/sizeof.png" />
+</div>
+<div class="section" id="n">
+<h4>获取数组第N项<a class="headerlink" href="#n" title="永久链接至标题">¶</a></h4>
+<img alt="_images/array_index.png" src="_images/array_index.png" />
+</div>
+<div class="section" id="id5">
+<h4>数组第N项赋值<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<img alt="_images/array_index2.png" src="_images/array_index2.png" />
+</div>
+</div>
+<span id="document-Arduino/AVR/07Variables"></span><div class="section" id="id1">
+<h3>变量<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>依据变量类型可分为：浮点变量、整型变量、布尔变量、字符串变量。根据变量的值又可分为高或低、真或假。</p>
+<img alt="_images/variable1.png" src="_images/variable1.png" />
+<p>在运算中，变量是一个使用非常频繁的指令。比如在2.1.7.2使用红外接收管和遥控器的相关代码中，ir_item就是一个变量。
+在使用变量时，如果用户在程序建构区内已新建了一个变量（例如使用循环语句i变量），变量模块将自动生成了一个相对应的系统变量i，用户直接使用即可。</p>
+<img alt="_images/variable2.png" src="_images/variable2.png" />
+</div>
+<span id="document-Arduino/AVR/08Functions"></span><div class="section" id="id1">
+<h3>函数<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>在函数部分，主要分为定义函数和执行函数，需注意，当用户自定义一个函数时，执行函数的代码是系统生成的。</p>
+<img alt="_images/function1.png" src="_images/function1.png" />
+<p>比如让LED点亮这个代码，当我把它放到函数blink中后，系统会自动生成执行 blink代码。</p>
+<img alt="_images/function1.png" src="_images/function1.png" />
+<p>另外需要注意，如果使用函数指令，必须运行执行 blink才可以。如果只自定义函数blink而不执行，LED是不会有任何反应的。</p>
+</div>
+<span id="document-Arduino/AVR/09Serial"></span><div class="section" id="id1">
+<h3>串口<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-Arduino/AVR/10Sensor"></span><div class="section" id="id1">
+<h3>传感器<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>传感模块：超声波、DHT11、DS18B20（新增）</p>
+<img alt="_images/sensor1.png" src="_images/sensor1.png" />
+<p>在传感器部分，我们将一些最常见的传感器相关指令进行编库，比如超声波测距模块，学生在使用超声波进行测距时，可直接运用该模块，只需将Trig与Echo管脚填好即可，这大大节省了学生的编程时间，这将更有助于使学生将更多的精力集中在创意实践上而非抓耳挠腮地编程。</p>
+</div>
+<span id="document-Arduino/AVR/11Actuator"></span><div class="section" id="id1">
+<h3>执行器<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>执行模块：声音播放、舵机控制、I2C液晶模块</p>
+<img alt="_images/actuator1.png" src="_images/actuator1.png" />
+<img alt="_images/actuator2.png" src="_images/actuator2.png" />
+</div>
+<span id="document-Arduino/AVR/12Display"></span><div class="section" id="id1">
+<h3>显示器<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-Arduino/AVR/13Communicate"></span><div class="section" id="id1">
+<h3>通信<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>通信是为了方便人与计算机交互而采用的一种特殊通信方式。具体包括：串口通信(新增串口选择和波特率设置)、红外通信、I2C通信、SPI通信（新增）。</p>
+<img alt="_images/commu1.png" src="_images/commu1.png" />
+<img alt="_images/commu2.png" src="_images/commu2.png" />
+<div class="section" id="id2">
+<h4>串口通信<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<img alt="_images/commu3.png" src="_images/commu3.png" />
+<p>串口通信功能学生可在串口监视器中查看。这一功能对于学生检查自己代码以及监视传感器数据提供了便利条件。
+假设学生将LM35的温度传感器接到模拟管脚A0口，学生可通过
+.. image:: images/13Communicate/commu4.png
+指令观察当前室温。随后可能会提出疑问：当前室温怎么可能是58？这将引发学生进一步的思考造成该数据的可能性。</p>
+</div>
+<div class="section" id="id3">
+<h4>红外通信<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<img alt="_images/commu5.png" src="_images/commu5.png" />
+<p>上图指令主要运用的是红外接收管与遥控器之间的数据发射与接收功能。学生掌握了红外通信的相关内容，便可以制作遥控风扇、遥控汽车等自主设计更强的创意电子产品。</p>
+</div>
+<div class="section" id="i2c">
+<h4>I2C通信<a class="headerlink" href="#i2c" title="永久链接至标题">¶</a></h4>
+<p>I2C（Inter－Integrated Circuit）是同步通信的一种特殊形式，具有接口线少，控制方式简单，器件封装形式小，通信速率较高等优点。Mixly支持I2C的读取和写入，并且支持基于I2C协议的执行器。</p>
+</div>
+<div class="section" id="spi">
+<h4>SPI通信<a class="headerlink" href="#spi" title="永久链接至标题">¶</a></h4>
+<p>SPI是串行外设接口（Serial Peripheral Interface）的缩写。SPI，是一种高速的，全双工，同步的通信总线，并且在芯片的管脚上只占用四根线，节约了芯片的管脚，同时为PCB的布局上节省空间，提供方便，拥有简单易用的特性。用户可以使用Mixly向SPI传输数据。</p>
+</div>
+</div>
+<span id="document-Arduino/AVR/14Storage"></span><div class="section" id="id1">
+<h3>存储<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>存储模块：EEPROM读写，SD卡写入</p>
+<img alt="_images/storage1.png" src="_images/storage1.png" />
+</div>
+<span id="document-Arduino/AVR/15Network"></span><div class="section" id="id1">
+<h3>网络<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-Arduino/AVR/16Factory"></span><div class="section" id="factory">
+<h3>Factory<a class="headerlink" href="#factory" title="永久链接至标题">¶</a></h3>
+<p>Factory中的模块可以方便用户编写Mixly中不支持的传感器功能。
+.. image:: images/16Factory/factory.png</p>
+<p>将以RTC1307库为例，介绍利用factory中的模块，在Mixly快速使用Arduino标准库。</p>
+<div class="section" id="id1">
+<h4>准备工作<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h4>
+<p>1.从github.com等网站下载ds1307RTC Arduino库。
+2.将库文件解压到Mixly/arduino-1.x.x/portable/sketchbook/libraries目录中。
+3.打开Mixly自带的arduino IDE（路径Mixlyarduino-1.x.xarduino.exe），在软件中打开 库目录下的example范例，编译并上传，测试能否正常使用。如果不能正常使用，则需要更换库或者检查硬件问题。</p>
+</div>
+<div class="section" id="id2">
+<h4>重写程序<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<p>打开范例程序Mixly/arduino-1.x.x/portable/sketchbook/libraries/DS1307RTC/examples/ReadTime/ReadTest/ReadTest.ino，先分析程序，并适当简化程序。</p>
+<p>源程序如下：</p>
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&quot;TimeLib.h&quot;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&quot;DS1307RTC.h&quot;</span><span class="cp"></span>
+
+    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Serial</span><span class="p">)</span> <span class="p">;</span> <span class="c1">// wait for serial</span>
+      <span class="n">delay</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;DS1307RTC Read Test&quot;</span><span class="p">);</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;-------------------&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">tmElements_t</span> <span class="n">tm</span><span class="p">;</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="n">RTC</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">tm</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Ok, Time = &quot;</span><span class="p">);</span>
+        <span class="n">print2digits</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Hour</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sc">&#39;:&#39;</span><span class="p">);</span>
+        <span class="n">print2digits</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Minute</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sc">&#39;:&#39;</span><span class="p">);</span>
+        <span class="n">print2digits</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Second</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;, Date (D/M/Y) = &quot;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Day</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Month</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tmYearToCalendar</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Year</span><span class="p">));</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">RTC</span><span class="p">.</span><span class="n">chipPresent</span><span class="p">())</span> <span class="p">{</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;The DS1307 is stopped.  Please run the SetTime&quot;</span><span class="p">);</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;example to initialize the time and begin running.&quot;</span><span class="p">);</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;DS1307 read error!  Please check the circuitry.&quot;</span><span class="p">);</span>
+          <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="n">delay</span><span class="p">(</span><span class="mi">9000</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">print2digits</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sc">&#39;0&#39;</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>简化程序如下：</p>
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span>    <span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&quot;TimeLib.h&quot;</span><span class="cp"></span>
+    <span class="cp">#include</span> <span class="cpf">&quot;DS1307RTC.h&quot;</span><span class="cp"></span>
+
+    <span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">tmElements_t</span> <span class="n">tm</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">RTC</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">tm</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Hour</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">&#39;:&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Minute</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">&#39;:&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Second</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Day</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Month</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="sc">&#39;/&#39;</span><span class="p">);</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">tmYearToCalendar</span><span class="p">(</span><span class="n">tm</span><span class="p">.</span><span class="n">Year</span><span class="p">));</span>
+      <span class="p">}</span>
+      <span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+    <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Factory模式下模块：</p>
+<img alt="_images/DS1307RTC_example.png" src="_images/DS1307RTC_example.png" />
+<p>编写完成后，编译并上传，进行测试。测试利用factroy编写的程序效果是否与arduino IDE编写相同。</p>
+</div>
+</div>
+<span id="document-Arduino/AVR/17Tools"></span><div class="section" id="id1">
+<h3>工具<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="arduino-esp8266">
+<h2>Arduino ESP8266编程<a class="headerlink" href="#arduino-esp8266" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="arduino-esp32">
+<h2>Arduino ESP32编程<a class="headerlink" href="#arduino-esp32" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-Arduino/ESP32/Handbit"></span><div class="section" id="id1">
+<h3>掌控板<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-Arduino/ESP32/MixGo"></span><div class="section" id="mixgo">
+<h3>MixGo<a class="headerlink" href="#mixgo" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="micropython">
+<h1>MicroPython 编程<a class="headerlink" href="#micropython" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-MicroPython/index"></span><div class="section" id="micropython">
+<h2>MicroPython 编程<a class="headerlink" href="#micropython" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-MicroPython/01Input-Output"></span><div class="section" id="id1">
+<h3>输入/输出<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<p>输入/输出所包含的指令主要分为四部分：控制管脚的输入输出（按信号类型可分为数字信号和模拟信号）、中断、脉冲长度及ShiftOut。</p>
+<ul class="simple">
+<li>输入输出：数字输入、数字输出、模拟输入、模拟输出</li>
+<li>中断控制：定义中断，取消中断</li>
+<li>脉冲长度</li>
+<li>移位输出</li>
+</ul>
+</div>
+<span id="document-MicroPython/02Control"></span><div class="section" id="id1">
+<h3>控制<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-MicroPython/Handbit"></span><div class="section" id="id1">
+<h3>掌控板<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+</div>
+<span id="document-MicroPython/MixGo"></span><div class="section" id="mixgo">
+<h3>MixGo<a class="headerlink" href="#mixgo" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="python">
+<h1>Python 编程<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h1>
+<div class="toctree-wrapper compound">
+<span id="document-Python/index"></span><div class="section" id="python">
+<h2>Python 编程<a class="headerlink" href="#python" title="永久链接至标题">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Mixly Team
+      
+        <span class="commit">
+          Revision <code>0e38b080</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/zh_CN/latest/">latest</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//readthedocs.org/projects/mixly/downloads/pdf/latest/">pdf</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/mixly/downloads/htmlzip/latest/">html</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/mixly/downloads/epub/latest/">epub</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/mixly/?fromdocs=mixly">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/mixly/?fromdocs=mixly">Builds</a>
+          </dd>
+      </dl>
+      <hr/>
+      Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
 
     </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
 </body>
 </html>
