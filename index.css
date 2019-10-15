@@ -1,1 +1,5 @@
 body{margin:0; padding:0;}
+iframe{margin:0; padding:0;}
+hr{border:0;border-bottom:1px dotted #cccccc;}
+#box_relative {position: absolute;left: 0px;top: 0px;}
+#footer{color:#999999;text-align:center;font-size:10px;margin-bottom:0}
