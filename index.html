@@ -11,8 +11,17 @@
         ifm.height=document.documentElement.clientHeight-55;
       }
 
+      function get_iframe() {
+       // gets the object that refers to the iframe, uasing its id
+       var myIFrame = document.getElementById("myiframe");
+
+       // Modify the iframe content'
+       myIFrame.contentWindow.document.getElementsByClassName("ethical-sidebar").height = 0;
+      }
+
       window.onresize=function(){  
          changeFrameHeight();  
+         get_iframe();
       }
     </script>
 </head>
