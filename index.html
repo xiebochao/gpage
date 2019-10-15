@@ -8,7 +8,7 @@
     <script type="text/javascript">
       function changeFrameHeight(){
         var ifm= document.getElementById("myiframe"); 
-        ifm.height=document.documentElement.clientHeight-10;
+        ifm.height=document.documentElement.clientHeight-55;
       }
 
       window.onresize=function(){  
@@ -18,5 +18,8 @@
 </head>
 <body>
     <iframe src="https://mixly.readthedocs.io/" id="myiframe" frameborder="0" width="100%" height='1000' onload="changeFrameHeight()" scrolling="auto"></iframe>
+    <hr />
+    <div id="footer" >© 2014 - 2018, Mixly Team. 京ICP备13037033号-1</div>
+    <div id="box_relative"><img src="image.png"/></div>
 </body>
 </html>
